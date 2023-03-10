@@ -35,12 +35,14 @@ const arrayIntegers = (arr) => {
           throw Error('tipo de dato invalido');
         }
       });
+      console.log(arrayPlane.sort(function(a, b){return a - b}))
       return arrayPlane.sort(function(a, b){return a - b});
     }
   } else {
     throw Error('no es un array'); 
   }
 };
+arrayIntegers([1, [2, [7,8], [3, [4, 5]], [4], [10, [13,15]]]]);
 module.exports = {
   arrayIntegers: arrayIntegers,
 };
