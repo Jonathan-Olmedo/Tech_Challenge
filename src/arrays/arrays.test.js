@@ -24,6 +24,10 @@ test("No es un array", () => {
   const { arrayIntegers } = require("./index");
   expect(() => arrayIntegers(45)).toThrow(Error);
 });
+test("Arreglo con elementos nulos", () => {
+  const { arrayIntegers } = require("./index");
+  expect(() => arrayIntegers([["Hola"], null])).toThrow(Error);
+});
 test("Arreglo de numeros y strings", () => {
   const { arrayIntegers } = require("./index");
   expect(() => arrayIntegers([["Hola"], [5.7, 9.8, [3.4]]])).toThrow(Error);
