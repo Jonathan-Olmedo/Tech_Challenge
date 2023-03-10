@@ -35,7 +35,6 @@ const arrayIntegers = (arr) => {
           throw Error('tipo de dato invalido');
         }
       });
-      console.log(arrayPlane.sort(function(a, b){return a - b}))
       return arrayPlane.sort(function(a, b){return a - b});
     }
   } else {
